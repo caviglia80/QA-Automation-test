@@ -4,7 +4,7 @@ module.exports = defineConfig({
   projectId: '',
   e2e: {
     supportFile: false,
-    specPattern: 'frontend-cypress/specs/*.js',
+    specPattern: 'cypress/specs/*.js',
   },
   chromeWebSecurity: false,
   browser: "chrome",
