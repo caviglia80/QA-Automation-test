@@ -1,5 +1,5 @@
 
-describe('FRONTEND - First Scenario', () => {
+describe('First Scenario - Cypress', () => {
   let testData;
 
   before(() => {
