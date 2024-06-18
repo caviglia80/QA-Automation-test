@@ -5,7 +5,9 @@ describe('BACKEND - Crocodile API', function () {
     it('should get crocodile data and verify entries', async function () {
         try {
             // 1. Do a GET on https://test-api.k6.io/public/crocodiles
-            const response = await axios.get('https://test-api.k6.io/public/crocodiles');
+            const response = await axios.get('https://test-api.k6.io/public/crocodiles', {
+                timeout: 10000 // la respuesta de esta api puede demorar..
+            });
             const crocodiles = response.data;
 
             // 2. Verify the number of entries
