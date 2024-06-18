@@ -1,8 +1,8 @@
 const axios = require('axios');
 const { expect } = require('chai');
 
-describe('BACKEND - Crocodile API', function () {
-    it('should get crocodile data and verify entries', async function () {
+describe('BACKEND - Scenarios', function () {
+    it('Crocodile API', async function () {
         try {
             // 1. Do a GET on https://test-api.k6.io/public/crocodiles
             const response = await axios.get('https://test-api.k6.io/public/crocodiles', {
