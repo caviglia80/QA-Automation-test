@@ -1,5 +1,5 @@
 // @ts-check
-const {defineConfig, devices} = require('@playwright/test');
+const { defineConfig, devices } = require('@playwright/test');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -31,7 +31,7 @@ module.exports = defineConfig({
     video: {
       mode: 'retain-on-failure',
       // size: {width: 1920, height: 1080}, //desktop
-      size: {width: 1920, height: 1080},
+      size: { width: 1920, height: 1080 },
     },
   },
 
@@ -41,7 +41,7 @@ module.exports = defineConfig({
       name: 'chromium',
       use: {
         ...devices['Desktop Chrome'],
-        viewport: {width: 1920, height: 1080},
+        viewport: { width: 1920, height: 1080 },
         launchOptions: {
           args: [
             '--start-maximized',
