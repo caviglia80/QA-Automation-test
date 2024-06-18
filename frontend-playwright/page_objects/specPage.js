@@ -39,9 +39,9 @@ class SpecPage {
 
   async PDP_checkAdditionalInformation() {
     await this.page.waitForLoadState('load');
-    await this.page.waitForSelector(this.additionalInfoTab, { timeout: 10000 });
+    await this.page.waitForSelector(this.additionalInfoTab, { timeout: 10000 }); // tab
     await this.page.click(this.additionalInfoTab);
-    await this.page.waitForSelector(this.additionalInfoContent, { timeout: 10000 });
+    await this.page.waitForSelector(this.additionalInfoContent, { timeout: 10000 }); // content of tab
     const additionalInfoVisible = await this.page.isVisible(this.additionalInfoContent);
     expect(additionalInfoVisible, 'Informacion adicional deberia ser visible').toBeTruthy();
   }
@@ -76,9 +76,9 @@ class SpecPage {
 
   async PDP_checkDescription() {
     await this.page.waitForLoadState('load');
-    await this.page.waitForSelector(this.descriptionTab, { timeout: 10000 });
+    await this.page.waitForSelector(this.descriptionTab, { timeout: 10000 }); // tab
     await this.page.click(this.descriptionTab);
-    await this.page.waitForSelector(this.descriptionContent, { timeout: 10000 });
+    await this.page.waitForSelector(this.descriptionContent, { timeout: 10000 }); // content of tab
     const descriptionVisible = await this.page.locator(this.descriptionContent).isVisible();
     expect(descriptionVisible, 'El contenido de la descripcion debe ser visible').toBeTruthy();
   }
