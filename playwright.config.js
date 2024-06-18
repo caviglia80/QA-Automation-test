@@ -1,19 +1,11 @@
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
-const dotenv = require('dotenv');
-dotenv.config();
-
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
 
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
-  testDir: './frontend-playwright/specs',
+  testDir: './playwright/specs',
   timeout: 120000,
   /* Run tests in files in parallel */
   fullyParallel: false,
