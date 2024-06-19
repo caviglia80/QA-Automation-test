@@ -1,5 +1,5 @@
-import HomePage from '../page_objects/homePage';
-import ServicesPage from '../page_objects/servicesPage';
+import HomePage from '../pages/homePage';
+import ServicesPage from '../pages/servicesPage';
 
 describe('First Scenario - Cypress', () => {
   let testData;
