@@ -3,7 +3,7 @@ import { expect } from '@playwright/test';
 
 class HomePage extends BasePage {
     constructor(page) {
-        super(page);
+        super(page); // me aseguro de inicializar BasePage
         this.discountLabelInHome = '.onsale';  // Label de descuentos en home
 
         this.productLink = '.woocommerce-LoopProduct-link';  // Link del producto

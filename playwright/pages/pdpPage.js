@@ -3,7 +3,7 @@ import { expect } from '@playwright/test';
 
 class PDPPage extends BasePage {
     constructor(page) {
-        super(page);
+        super(page); // me aseguro de inicializar BasePage
         this.discountLabelInPDP = 'div.product.type-product.sale > .onsale';  // Label de descuento en el PDP
 
         this.additionalInfoTab = '#tab-title-additional_information a';
